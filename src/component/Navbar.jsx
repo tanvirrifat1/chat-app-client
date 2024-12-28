@@ -30,7 +30,7 @@ function Navbar() {
               <div className="w-10 rounded-full">
                 <img
                   alt="Tailwind CSS Navbar component"
-                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                  src={authUser?.profileImage || ""}
                 />
               </div>
             </div>
@@ -46,7 +46,9 @@ function Navbar() {
                     </Link>
                   </li>
                   <li>
-                    <p>Settings</p>
+                    <Link to="/setting">
+                      <p className="justify-between">Setting</p>
+                    </Link>
                   </li>
                   <li onClick={logout}>
                     <p>Logout</p>

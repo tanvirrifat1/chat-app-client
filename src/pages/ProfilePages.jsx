@@ -77,6 +77,7 @@ function ProfilePages() {
               placeholder="Your Name"
               name="name"
               value={formData.fullName}
+              readOnly
               onChange={(e) =>
                 setFormData({ ...formData, fullName: e.target.value })
               }
