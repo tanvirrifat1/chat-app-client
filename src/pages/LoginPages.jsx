@@ -31,7 +31,9 @@ function LoginPages() {
 
     if (success === true) login(formData);
 
-    if (success === true) router("/");
+    if (success === true) {
+      router("/");
+    }
   };
 
   return (
