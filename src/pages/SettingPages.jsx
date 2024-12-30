@@ -11,6 +11,8 @@ const PREVIEW_MESSAGES = [
   },
 ];
 
+console.log("hello");
+
 const SettingsPage = () => {
   const { theme, setTheme } = useThemeStore();
 
