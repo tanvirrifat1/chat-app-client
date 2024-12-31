@@ -30,7 +30,10 @@ function Navbar() {
               <div className="w-10 rounded-full">
                 <img
                   alt="Tailwind CSS Navbar component"
-                  src={authUser?.profileImage || ""}
+                  src={
+                    authUser?.profileImage ||
+                    "https://i.ibb.co.com/DDm73Qb/user.png"
+                  }
                 />
               </div>
             </div>
